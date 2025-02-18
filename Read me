@@ -1,0 +1,61 @@
+Retail Sales Performance Dashboard - README
+
+Project Overview
+
+This project is a Retail Sales Performance Dashboard built using Power BI. The dashboard provides insights into key retail sales metrics, sales trends over time, and brand performance.
+Features & Insights
+
+The dashboard includes the following key sections:
+
+1. Key Performance Indicators (KPIs):
+Total Sales: €49.3M
+Gross Profit Margin: 58%
+Cost of Goods Sold (COGS): €20.9M
+Markup: 135.5%
+Average Sales of 1 Store: €161.1K
+SMA (Sales Moving Average): €1.4M
+
+2. Filters & Date Selection:
+Users can filter data by Month & Year.
+A date range selector (01/01/2022 - 31/12/2024) allows users to analyze trends over different time periods.
+Quick filters for Last Month and All months except last month.
+
+3. Sales by Month & Year:
+A bar chart showing monthly sales trends over time (from Jan 2022 to Jul 2024).
+Helps in identifying seasonal patterns and revenue growth.
+
+4. Sales by Continent:
+A pie chart displaying sales distribution by region.
+Asia accounts for 58.87% of total sales, followed by other continents.
+
+5. Sales by Brand:
+A horizontal bar chart showing sales performance across different brands.
+Top-performing brands include Fabrikam, Contoso, and Adventure Works.
+
+Tools & Technologies Used:
+
+Power BI for data visualization.
+DAX (Data Analysis Expressions) for calculations.
+Data Sources: Retail sales data from Excel
+
+How to Use:
+
+Open the Power BI Dashboard (.pbix file).
+Interact with filters to adjust the view based on time period or region.
+Hover over charts to see detailed sales figures.
+Analyze brand performance to identify top-selling brands.
+
+Future Improvements:
+
+Integrate real-time data updates.
+Add predictive analytics using Power BI AI features.
+Include more granular customer segmentation analysis.
+
+Contact Information
+
+For any queries or feedback, please contact:
+Name: Altynay
+Email: altynay.de@gmail.com
+
+This README serves as a guide for understanding and utilizing the Power BI Retail Sales Performance Dashboard effectively.
+
