@@ -1,0 +1,35 @@
+SALES TABLE MEASURE:
+
+SMA = AVERAGEX(VALUES('Calendar'[Month Year]),[Sum of total Sales])
+ 
+Gross Profit Margin (%) = DIVIDE([Gross Profit], [Sum of total Sales])
+
+Gross Profit = [Sum of total Sales] -[Cost of Goods Sold (COGS)] 
+
+AVG Sales of 1 Store = AVERAGEX( VALUES('Calendar'[Month Year]), DIVIDE(SUM([Sum of sales]), DISTINCTCOUNT('Sales'[StoreKey])))
+
+AvgSales = DIVIDE([Sum of total Sales], COUNTROWS('Calendar'))
+
+Cost of Goods Sold (COGS) = SUM([Cost])
+
+Markup = DIVIDE([Gross Profit], Sales[Cost of Goods Sold (COGS)])
+
+Sum of total Sales = SUM([Sum of sales])
+
+
+
+CALENDAR DATE TABLE : 
+
+Calendar = CALENDAR(MIN('Sales'[Date]),MAX('Sales'[Date]))
+
+Indicative Month = RANKX(GROUPBY('Calendar','Calendar'[Number Year Month]), 'Calendar'[Number Year Month],,DESC)
+
+Month Year = FORMAT('Calendar'[Date], "MMM YY")
+
+Number WeekDay = WEEKDAY('Calendar'[Date],2)
+
+Number Year Month = FORMAT('Calendar'[Date], "YYYYMM")
+
+WeekDay = FORMAT('Calendar'[Date], "DDD")
+
+Year = Year('Calendar'[Date])
